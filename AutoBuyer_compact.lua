@@ -67,7 +67,6 @@ local gearList = {
     { name = "Harvest Bell",        enabled = true },
     { name = "Trowel",              enabled = true },
     { name = "Reverter",            enabled = true },
-    { name = "Magnifying Glass",    enabled = true },
 }
 
 local function setStatus(lbl, msg, color)
