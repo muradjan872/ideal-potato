@@ -58,14 +58,16 @@ local seedList = {
 }
 
 local gearList = {
-    { name = "Watering Can",    enabled = true },
-    { name = "Favorite Tool",   enabled = true },
-    { name = "Basic Sprinkler", enabled = true },
-    { name = "Super Sprinkler", enabled = true },
-    { name = "Turbo Sprinkler", enabled = true },
-    { name = "Harvest Bell",    enabled = true },
-    { name = "Trowel",          enabled = true },
-    { name = "Reverter",        enabled = true },
+    { name = "Watering Can",        enabled = true },
+    { name = "Super Watering Can",  enabled = true },
+    { name = "Favorite Tool",       enabled = true },
+    { name = "Basic Sprinkler",     enabled = true },
+    { name = "Super Sprinkler",     enabled = true },
+    { name = "Turbo Sprinkler",     enabled = true },
+    { name = "Harvest Bell",        enabled = true },
+    { name = "Trowel",              enabled = true },
+    { name = "Reverter",            enabled = true },
+    { name = "Magnifying Glass",    enabled = true },
 }
 
 local function setStatus(lbl, msg, color)
