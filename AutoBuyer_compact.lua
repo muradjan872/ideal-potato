@@ -14,13 +14,13 @@ local shopRestocked = remotes:WaitForChild("ShopRestocked")
 local SEED_POS = Vector3.new(176.70, 201.05, 672)
 local GEAR_POS = Vector3.new(212.10, 204.02, 610.38)
 
-local teleportEnabled = true
+local teleportEnabled = false
 local guiVisible = true
 
 local seedState = {
     buying = false,
     lastBuy = 0,
-    auto = false,
+    auto = true,
     bought = 0,
     status = nil,
     counterLabel = nil,
@@ -29,7 +29,7 @@ local seedState = {
 local gearState = {
     buying = false,
     lastBuy = 0,
-    auto = false,
+    auto = true,
     bought = 0,
     status = nil,
     counterLabel = nil,
@@ -60,13 +60,12 @@ local seedList = {
 local gearList = {
     { name = "Watering Can",        enabled = true },
     { name = "Super Watering Can",  enabled = true },
-    { name = "Favorite Tool",       enabled = true },
+    { name = "Favorite Tool",       enabled = false},
     { name = "Basic Sprinkler",     enabled = true },
     { name = "Super Sprinkler",     enabled = true },
     { name = "Turbo Sprinkler",     enabled = true },
     { name = "Harvest Bell",        enabled = true },
-    { name = "Trowel",              enabled = true },
-    { name = "Reverter",            enabled = true },
+    { name = "Reverter",            enabled = false},
 }
 
 local function setStatus(lbl, msg, color)
